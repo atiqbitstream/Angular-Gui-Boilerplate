@@ -1,1 +1,16 @@
-<p>sidenav works!</p>
+<!-- Creates a layout with a left-positioned sidenav and explicit content. -->
+
+<mat-drawer-container class="w-full h-screen" autosize>
+    <mat-drawer #drawer  class="example-sidenav" mode="over">
+      <p>Auto-resizing sidenav</p>
+     
+        <p>Lorem, ipsum dolor sit amet consectetur.</p>
+     
+    </mat-drawer>
+  
+ <!-- This div will contain the main content -->
+ <div class="example-main-content">
+  <ng-content></ng-content> <!-- This will allow you to inject main component content -->
+</div>
+  
+  </mat-drawer-container>
