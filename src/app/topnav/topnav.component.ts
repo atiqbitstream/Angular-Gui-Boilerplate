@@ -4,12 +4,13 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MaterialService } from '../services/material.service';
-
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @Component({
   selector: 'app-topnav',
   standalone: true,
-  imports: [MatToolbarModule, MatButtonModule, MatIconModule,MatSidenavModule],
+  imports: [MatToolbarModule, MatButtonModule, MatIconModule,MatSidenavModule, MatSlideToggleModule,MatBadgeModule],
   templateUrl: './topnav.component.html',
   styleUrl: './topnav.component.css'
 })

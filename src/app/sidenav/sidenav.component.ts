@@ -5,11 +5,13 @@ import { Subscription } from 'rxjs';
 import { MaterialService } from '../services/material.service';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import {MatRippleModule} from '@angular/material/core';
 
 @Component({
   selector: 'app-sidenav',
   standalone: true,
-  imports: [MatSidenavModule,MatButtonModule,MatFormFieldModule, MatSelectModule],
+  imports: [MatSidenavModule,MatButtonModule,MatFormFieldModule, MatSelectModule,MatIconModule, MatRippleModule],
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.css'
 })
